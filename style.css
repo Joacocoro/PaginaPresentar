@@ -292,7 +292,7 @@ footer i:hover {
 /* alneacion de los productos para la vista en computadora */
 
 /* productos vista 1920px */
-@media (min-width: 1800px) {
+/* @media (min-width: 1800px) {
     .product-container{
         display: flex;
     }
@@ -306,7 +306,7 @@ footer i:hover {
         height: 40vh;
         margin-bottom: 15px;
     }
-}   
+} */
 
 /* productos vista 1366px */
 @media (max-width: 1400px) {
@@ -315,17 +315,21 @@ footer i:hover {
     }
     #productos1{
     padding-top: 4%;
+    display: flex;
 }
+    #productos2{
+        display: flex;
+    }
     .product-description{
         max-width: auto;
     } 
     .main-image {
-        height: 40vh;
-        width: auto;
+        height: 30vh;
+        max-width: auto;
         margin-bottom: 15px;
     }
-    
-} 
+     
+}
 
 /* Animacion de los productos */
 .main-image{
@@ -338,18 +342,20 @@ footer i:hover {
 /* vista productos celular */
 @media (max-width: 768px) {
     .main-image {
-        height: 50vh;
-        width: auto;
+        height: auto;
+        width: 90%;
     }
     .product-container{
+        flex-direction: column;
         text-align: center;
-        margin-left: 10px;
+        margin: auto;
         padding-top: 6%;
+        align-items: center;
     }
     #productos2{
     padding-bottom: 10%;
 }
-    .product-description{
+    .product-description, .product-description p{
         padding-right: 5%;
         font-size: 22px;
     }
